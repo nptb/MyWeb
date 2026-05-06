@@ -1,5 +1,9 @@
 THIẾT KẾ WEBSITE TIN TỨC VỀ GAME VÀ CÔNG NGHỆ:
 
+CÔNG CỤ THIẾT KẾ: FIGMA
+
+<img width="1728" height="519" alt="image" src="https://github.com/user-attachments/assets/cc82cb74-fa5f-4e61-87ba-a52b06a12d5e" />
+
 MỤC TIÊU:
 
 CẬP NHẬT THÔNG TIN VỀ CÔNG NGHỆ VÀ GAME
@@ -15,9 +19,4 @@ BÀI VIẾT HIỂN THỊ NỘI DUNG CỤ THỂ, COMMENT VÀ LƯỢT THÍCH
 TRANG CÁ NHÂN HIỂN THỊ THÔNG TIN VỀ SỐ BÀI ĐĂNG, SỐ NGƯỜI ĐĂNG KÝ 
 
 <img width="973" height="822" alt="image" src="https://github.com/user-attachments/assets/520522d2-7298-4cee-bc9c-da2acdc23891" />
-
-THIẾT KẾ: FIGMA
-
-<img width="1728" height="519" alt="image" src="https://github.com/user-attachments/assets/cc82cb74-fa5f-4e61-87ba-a52b06a12d5e" />
-
 
