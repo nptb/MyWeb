@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân</title>
+    <!-- Link Font Awesome cho icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Liên kết file CSS dùng chung -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleinfo.css">
+</head>
+<body>
+
+    <!-- THANH ĐẦU TRANG (Đã đồng bộ Status Capsule với trang chủ) -->
+    <header id="main-header">
+        <div class="search-bar">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search">
+            <kbd>Ctrl + K</kbd>
+        </div>
+        
+        <nav class="user-nav">
+            <button class="btn-bell">
+                <i class="fa-regular fa-bell"></i>
+                <span class="notification-badge">1</span>
+            </button>
+
+            <div class="status-capsule">
+                <div class="status-item">
+                    <img src="./img/SVG.png" alt="streak" class="status-icon">
+                    <span class="status-value color-pink">0</span>
+                </div>
+                <div class="status-item">
+                    <img src="./img/icon.png" alt="credits" class="status-icon">
+                    <span class="status-value">0</span>
+                </div>
+                <div class="status-item">
+                    <img src="./img/icon2.png" alt="energy" class="status-icon">
+                    <span class="status-value">10</span>
+                </div>
+
+                <!-- Link quay lại chính trang này (Profile) -->
+                <a href="profile.html" class="user-avatar-wrapper">
+                    <img src="./img/avt.png" alt="user" class="user-avatar">
+                    <span class="online-dot"></span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BỐ CỤC CHÍNH 3 CỘT -->
+    <div class="app-container">
+        
+        <!-- CỘT 1: SIDEBAR TRÁI (Giữ nguyên cấu trúc trang chủ) -->
+        <aside id="left-sidebar">
+            <button class="btn-new-post">+ New post</button>
+            
+            <nav class="menu-section">
+                <!-- Quay về trang chủ -->
+                <a href="trangchu.html" class="menu-item"><i class="fa fa-home"></i> For You</a>
+                <a href="#" class="menu-item"><i class="fa fa-users"></i> Following</a>
+                <a href="#" class="menu-item"><i class="fa fa-clock-rotate-left"></i> History</a>
+            </nav>
+
+            <section class="menu-section">
+                <p class="section-title">Groups</p>
+                <a href="#" class="menu-item">Game Developers</a>
+                <a href="#" class="menu-item">Machine Learning News</a>
+            </section>
+        </aside>
+
+        <!-- CỘT 2: NỘI DUNG CHÍNH (PROFILE) -->
+        <main id="profile-content">
+            <div class="profile-wrapper">
+                <!-- TẤT CẢ NẰM TRONG KHUNG NÀY -->
+                <section class="profile-header-card">
+                    
+                    <!-- 1. Phần ảnh bìa -->
+                    <div class="cover-photo">
+                        <span>Khung bìa</span>
+                    </div>
+
+                    <!-- 2. Phần thông tin người dùng -->
+                    <div class="profile-info">
+                        <div class="avatar-large-wrapper">
+                            <img src="./img/avt.png" alt="sagi" class="avatar-large">
+                        </div>
+                        
+                        <h1 class="user-name">sagi</h1>
+                        <p class="user-handle">@sagi1412 • Joined Jun 28, 2024</p>
+                        
+                        <div class="profile-actions">
+                            <button class="btn-follow">Follow</button>
+                            <button class="btn-award"><i class="fa fa-award"></i> Award</button>
+                            <button class="btn-more"><i class="fa fa-ellipsis"></i></button>
+                        </div>
+
+                        <div class="profile-stats">
+                            <div class="stat-num"><strong>10</strong> <span>Reputation</span></div>
+                            <div class="stat-num"><strong>0</strong> <span>Upvotes</span></div>
+                            <div class="stat-num"><strong>1</strong> <span>Followers</span></div>
+                            <div class="stat-num"><strong>0</strong> <span>Following</span></div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Phần Activity (Bây giờ đã nằm TRONG khung trắng) -->
+                    <div class="profile-activity-section">
+                        <h3 class="activity-title">Activity</h3>
+                        
+                        <nav class="profile-tabs">
+                            <button class="tab-item active">Posts</button>
+                            <button class="tab-item">Replies</button>
+                            <button class="tab-item">Upvoted</button>
+                        </nav>
+
+                        <section class="activity-feed">
+                            <div class="empty-state">
+                                <p>Where do we start — it's everything. Go on, share with us your best.</p>
+                                <button class="btn-new-post-large">New post</button>
+                            </div>
+                        </section>
+                    </div>
+
+                </section> <!-- KẾT THÚC KHUNG TRẮNG -->
+            </div>
+        </main>
+
+        <!-- CỘT 3: SIDEBAR PHẢI (THỐNG KÊ) -->
+        <aside id="right-sidebar">
+            
+            <!-- Thống kê đọc -->
+            <section class="stat-card">
+                <header class="card-header">
+                    <h4>Reading Overview</h4>
+                    <a href="#" class="link-more">Learn more</a>
+                </header>
+                <div class="stat-grid">
+                    <div class="stat-item-box">
+                        <span class="stat-value">37</span>
+                        <span class="stat-label">Longest streak</span>
+                    </div>
+                    <div class="stat-item-box">
+                        <span class="stat-value">129</span>
+                        <span class="stat-label">Total reading days</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tags phổ biến -->
+            <section class="stat-card">
+                <h4>Top tags by reading days</h4>
+                <ul class="tag-stats-list">
+                    <li>
+                        <span class="tag-name">AI</span>
+                        <div class="progress-container">
+                            <div class="progress-fill purple" style="width: 52%;"></div>
+                        </div>
+                        <span class="percentage">+52%</span>
+                    </li>
+                    <li>
+                        <span class="tag-name">Linux</span>
+                        <div class="progress-container">
+                            <div class="progress-fill purple" style="width: 48%;"></div>
+                        </div>
+                        <span class="percentage">+48%</span>
+                    </li>
+                    <li>
+                        <span class="tag-name">LLM</span>
+                        <div class="progress-container">
+                            <div class="progress-fill purple" style="width: 48%;"></div>
+                        </div>
+                        <span class="percentage">+39%</span>
+                    </li>
+                    <li>
+                        <span class="tag-name">C++</span>
+                        <div class="progress-container">
+                            <div class="progress-fill purple" style="width: 48%;"></div>
+                        </div>
+                        <span class="percentage">+30%</span>
+                    </li>
+                    <li>
+                        <span class="tag-name">C</span>
+                        <div class="progress-container">
+                            <div class="progress-fill purple" style="width: 48%;"></div>
+                        </div>
+                        <span class="percentage">+26%%</span>
+                    </li>
+
+                </ul>
+            </section>
+
+
+            <!-- Nhóm đang tham gia -->
+            <section class="stat-card">
+                <h4>Active in these Groups</h4>
+                <ul class="group-list">
+                    <li>
+                        <div class="group-icon"></div>
+                        <div class="group-info">
+                            <strong>Machine Learning News</strong>
+                            <span>@mlnews • 8.2K members</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="group-icon"></div>
+                        <div class="group-info">
+                            <strong>Game Developers</strong>
+                            <span>@game_developers • 14.4K members</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="group-icon"></div>
+                        <div class="group-info">
+                            <strong>Microsoft Learn</strong>
+                            <span>@microsoftlearn • 122 members</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+        </aside>
+
+    </div>
+
+    <!-- Nút cuộn lên đầu trang -->
+    <div class="scroll-top">
+        <i class="fa fa-chevron-up"></i>
+    </div>
+
+</body>
+</html>
